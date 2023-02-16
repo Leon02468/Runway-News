@@ -1,0 +1,58 @@
+.form{
+    background-color: white;
+    margin: 3rem auto 0 auto;
+    width: 400px;
+    height: 385px;
+    border: 2px inset #426EF0;
+    border-radius: 5px;
+}
+
+.header{
+    background-image: linear-gradient(to bottom right, #426EF0, #426EF0, #3FB7FF);
+    padding: 1rem 0;
+}
+.title{
+    margin: 0 4.9rem;
+    font-size: 30px;
+    font-weight: bolder;
+    color: ghostwhite;
+}
+
+.body{
+    margin-left: 2rem;
+    h2{
+        font-size: 25px;
+        color: #426EF0;
+        margin-top: 1rem;
+        margin-bottom: 0;
+    }
+    input{
+        font-size: 25px;
+        color: #426EF0;
+        border-color: #3FB7FF;
+    }
+}
+
+.footer{
+    margin: 2rem 0 0 2rem;
+}
+.login-btn{
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom right, #426EF0, #426EF0, #3FB7FF);
+    color: ghostwhite;
+    font-size: 20px;
+    border-color: #3FB7FF;
+}
+.helper{
+    color: #426EF0;
+    font-size: 15px;
+}
+
+.signWithGG{
+    border-radius: 5%;
+    background-image: linear-gradient(to bottom right, #426EF0, #426EF0, #3FB7FF);
+    color: ghostwhite;
+    font-size: 15px;
+    border-color: #3FB7FF;
+    margin: 1rem 8.25rem 0 8.25rem;
+}

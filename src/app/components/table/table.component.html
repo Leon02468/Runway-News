@@ -1,0 +1,39 @@
+<div class="orange-place">
+  <div class="news" *ngFor="let news of news$">
+    <mat-card class="card">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <img class="avatar" src={{news.user.profile_image_90}} alt="">
+          </div>
+          <mat-card-title>{{news.user.username}}</mat-card-title>
+          <mat-card-subtitle>{{news.readable_publish_date}}</mat-card-subtitle>
+        </mat-card-header>
+        <div class="img-container">
+            <img class="img" mat-card-image src={{news.social_image}} alt="Photo of a Shiba Inu">
+            <span class="tag" *ngFor="let tag of news.tag_list">{{tag}}</span>
+        </div>
+        <mat-card-content>
+          <mat-card-title>{{news.title}}</mat-card-title>
+          <p>
+            {{news.description}}
+          </p>
+        </mat-card-content>
+        <mat-card-actions align="end">
+          <button mat-button>
+            <mat-icon style="height: 20px;">thumb_up_alt</mat-icon>
+            {{news.positive_reactions_count}}
+          </button>
+          <button mat-button>
+            <mat-icon style="height: 20px;">comment</mat-icon>
+            {{news.comments_count}}
+          </button>
+          <a href={{news.url}}>
+            <button mat-raised-button color="primary">
+              Read
+            </button>
+          </a>
+        </mat-card-actions>
+        <!-- <p>{{news.path}}</p> -->
+      </mat-card>
+  </div>
+</div>

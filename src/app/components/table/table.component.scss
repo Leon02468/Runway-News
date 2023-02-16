@@ -1,0 +1,48 @@
+.orange-place{
+    display: grid;
+    grid-gap: 1rem 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.news{
+    display: flex;
+    justify-content: center
+}
+
+.card {
+    margin-top: 1rem;
+    max-width: 400px;
+}
+
+mat-card-header{
+    background-image: linear-gradient(to bottom right, #426EF0, #426EF0, #3FB7FF);
+    color: ghostwhite;
+    border-radius: 5px 5px 0 0;
+}
+  
+.avatar{
+    max-width: 50px;
+    border-radius: 50%;
+ }
+
+.img-container{
+    min-height: 330px;
+}
+
+.img{
+    width: 400px;
+    height: 300px;
+}
+
+.tag{
+    margin-left: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    background-color: rgb(165, 164, 164);
+    color: ghostwhite;
+    opacity: 80%;
+}
+
+mat-card-content{
+    height: 100px;
+}

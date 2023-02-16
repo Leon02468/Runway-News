@@ -1,0 +1,12 @@
+    <mat-toolbar color="primary">
+     <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Runway News</span>
+    <span class="example-spacer"></span>
+    <img class="avatar" *ngIf="authService.currentUser" [src]="authService.currentUser?.photoURL">
+    <span *ngIf="authService.currentUser">{{authService.currentUser?.displayName}}</span>
+    <button mat-icon-button (click)="authService.logOut()">
+      <mat-icon *ngIf="authService.currentUser">power_settings_new</mat-icon>
+    </button>
+  </mat-toolbar>
